@@ -18,8 +18,11 @@ double resto(double r, int ix)
          print(M[ix]);
          r-=M[ix];
      }
-     if (r==0) {cout<<endl;
-     return 1;}
+     if (r==0)
+     {
+     cout<<endl;
+     return 1;
+     }
      resto(r, ix+1);
 }
 
@@ -30,7 +33,7 @@ int main()
     cout<<"Resto = ";
     cin>>r;
     if (r>0) resto(r,0);
-    if (br==0) cout<<"0 moneta\n";
+    if (br==1) cout<<"1 moneta\n";
     else cout<<br<<" moneti\n";
     return 0;
 }
